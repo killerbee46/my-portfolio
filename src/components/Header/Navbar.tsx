@@ -12,6 +12,7 @@ const Navbar = () => {
             // background: 'gray',
             display: 'flex',
             justifyContent: 'center',
+            marginBottom: '20px'
         }}>
             <Row
                 style={{
@@ -32,7 +33,7 @@ const Navbar = () => {
                         <Button>Email Me</Button>
                     </a>
                 </Col>
-                <Divider style={{ margin: 0 }} />
+                <Divider style={{ margin: "9px 0 0 0", background: 'rgba(0, 0, 0, 0.142)' }} />
             </Row>
 
         </div>

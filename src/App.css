@@ -1,0 +1,41 @@
+.flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.center {
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.tag {
+    background: rgba(0, 255, 0, 0.671);
+    font-size: 25px;
+    padding: 5px 10px;
+    width: fit-content;
+    border-radius: 20px;
+}
+
+.button__primary.ant-btn {
+    height: unset;
+    font-size: 20px;
+    border-radius: 5px;
+    background: #2193b0;
+    color: white;
+    font-weight: 550;
+}
+
+.button__primary.ant-btn:hover {
+    height: unset;
+    font-size: 20px;
+    border-radius: 5px;
+    background: white;
+    color: #2193b0;
+    font-weight: 550;
+}
