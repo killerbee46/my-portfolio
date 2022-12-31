@@ -3,7 +3,9 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './Header.css'
 
-const NavMenu = () => {
+const NavMenu = (props: any) => {
+
+    const path = props?.path
 
     const menus = [
         { label: "Home", path: "/" },
@@ -27,7 +29,7 @@ const NavMenu = () => {
                                     color: 'black',
                                     fontWeight: 550,
                                 }}>
-                                <Col className='menu__item'>
+                                <Col className={`menu__item ${path === data?.path ? 'menu__item__active' : ''} `}>
                                     {data?.label}
                                 </Col>
                             </Link>

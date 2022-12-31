@@ -1,3 +1,6 @@
 /* *{
     color: rgba(0, 0, 0, 0.342);
 } */
+.menu__item__active {
+    color: rgb(60, 124, 0);
+}

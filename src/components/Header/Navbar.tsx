@@ -6,6 +6,9 @@ import './Header.css'
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
+
+    const path = window.location.href.slice(21, window.location.href.length)
+
     return (
         <div style={{
             height: '50px',
@@ -26,7 +29,7 @@ const Navbar = () => {
                     <Logo />
                 </Col>
                 <Col>
-                    <NavMenu />
+                    <NavMenu path={path} />
                 </Col>
                 <Col>
                     <a href="mailto:someone@example.com" target="_blank">
