@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
 
     const path = window.location.href.slice(21, window.location.href.length)
+    console.log(path)
 
     return (
         <div style={{
@@ -32,8 +33,8 @@ const Navbar = () => {
                     <NavMenu path={path} />
                 </Col>
                 <Col>
-                    <a href="mailto:someone@example.com" target="_blank">
-                        <Button>Email Me</Button>
+                    <a href="mailto:sugamsingh10@gmail.com" target="_blank">
+                        <Button className='black__border'><b>Email Me</b></Button>
                     </a>
                 </Col>
                 <Divider style={{ margin: "9px 0 0 0", background: 'rgba(0, 0, 0, 0.142)' }} />

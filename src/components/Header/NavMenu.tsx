@@ -10,8 +10,8 @@ const NavMenu = (props: any) => {
     const menus = [
         { label: "Home", path: "/" },
         { label: "Projects", path: "/projects" },
-        { label: "Works", path: "/works" },
-        { label: "About", path: "/about" },
+        // { label: "Works", path: "/works" },
+        // { label: "About", path: "/about" },
         { label: "Resume", path: "/resume" },
     ]
     return (

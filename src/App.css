@@ -78,3 +78,7 @@
     color: #5cb85c;
     font-weight: 550;
 }
+
+.black__border {
+    border: 2px solid black;
+}

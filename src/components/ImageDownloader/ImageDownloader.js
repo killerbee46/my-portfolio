@@ -13,7 +13,9 @@ const ImageDownloader = () => {
     // alink.click();
 
     const OnButtonClick = () => {
-        html2canvas(document.querySelector("#capture")).then(canvas => {
+        html2canvas(<div id="capture">
+            <h4>Hello world!</h4>
+        </div>).then(canvas => {
             const subElement = document.body.appendChild(canvas)
             var img = subElement.toDataURL("image/png");
             let alink = document.createElement('a');
@@ -26,9 +28,7 @@ const ImageDownloader = () => {
 
     return (
         <div>
-            <div id="capture">
-                <h4>Hello world!</h4>
-            </div>
+
 
             <Button onClick={() => OnButtonClick()}>Download</Button>
         </div>

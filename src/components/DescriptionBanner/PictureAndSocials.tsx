@@ -8,7 +8,7 @@ const PictureAndSocials = () => {
 
     const myPic = "https://i.ibb.co/Phk7NM9/me.png"
     return (
-        <div style={{ background: '#2193b0', textAlign: 'center', height: '100%', position: 'relative' }}>
+        <div style={{ background: '#5cb85c', textAlign: 'center', height: '100%', position: 'relative' }}>
             <Typography.Title className='title' level={3}>My Socials</Typography.Title>
             <a href={"https://facebook.com"} target="_blank" className='socials gm'><MailOutlined /></a>
             <a href={"https://instagram.com"} target="_blank" className='socials gh'><GithubOutlined /></a>
@@ -16,7 +16,7 @@ const PictureAndSocials = () => {
             <a href={"https://facebook.com"} target="_blank" className='socials fb'><FacebookOutlined /></a>
             <a href={"https://instagram.com"} target="_blank" className='socials ig'><InstagramOutlined /></a>
             <a href={"https://linkedin.com"} target="_blank" className='socials li'><LinkedinOutlined /></a>
-            <Image style={{ opacity: '70%', width: '488px' }} preview={false} src={myPic} />
+            <Image style={{ opacity: '80%', width: '488px' }} preview={false} src={myPic} />
         </div>
     )
 }
