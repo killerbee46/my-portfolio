@@ -12,7 +12,7 @@ const HomepageBanner = () => {
         <IAM />
         <Typography.Paragraph className="text-background text-lg">I’m a Freelance UI/UX Designer and Developer based in London, England. I strives to build immersive and beautiful web applications through carefully crafted code and user-centric design.</Typography.Paragraph>
         <Space className="mt-10">
-            <Button icon={<UserOutlined />} type="primary">More About Me</Button>
+            <Button icon={<UserOutlined />} type="primary">Production</Button>
             <Button icon={<ProductOutlined />} type="dashed">Portfolio</Button>
         </Space>
         </Col>
