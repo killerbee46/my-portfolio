@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import './IAM.css'
-import { colors } from '../../themes/colors'
-import { Typography } from 'antd'
+import Title from 'antd/es/typography/Title'
 
 const IAM = () => {
     const [who, setWho] = useState(0)
@@ -25,7 +24,7 @@ const IAM = () => {
         meWho()
     },[who])
   return (
-    <div className='font-bold uppercase'> I'm {me[who]}</div>
+    <Title className='flex gap-3 font-bold uppercase !text-background !mt-10'> I'm <span className='text-primary'>{me[who]}</span></Title>
   )
 }
 
