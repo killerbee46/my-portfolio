@@ -1,14 +1,25 @@
-import React, { useEffect } from 'react'
+import { Layout } from 'antd';
+import Navbar from '../components/Navbar/Navbar';
+import MyFooter from '../components/Footer/MyFooter';
 
-const MainLayout = (props:any) => {
-    const location = (window.location.pathname)?.slice(1)
-    useEffect(()=> {
-        console.log('reload')
-        document.title = `${(location.length !== 0 ? location?.toLocaleUpperCase() + " | "  : "")}` + "Sugam Bhandari"
-},[])
+const { Header, Content, Footer } = Layout;
+
+const MainLayout = (props: any) => {
+
   return (
-    <div>{props?.children}</div>
-  )
-}
+    <Layout>
+      <Header style={{ display: 'flex', alignItems: 'center', background:'black' }}>
+        <Navbar />
+      </Header>
 
-export default MainLayout
+      <Content style={{ minHeight: 500 }}>
+        {props?.children}
+      </Content>
+      <Footer style={{ textAlign: 'center' }}>
+        <MyFooter />
+      </Footer>
+    </Layout>
+  );
+};
+
+export default MainLayout;
