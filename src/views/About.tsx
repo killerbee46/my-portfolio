@@ -1,24 +1,12 @@
-import { ArrowLeftOutlined, LoadingOutlined } from '@ant-design/icons'
-import { useQuery } from '@tanstack/react-query'
-import { Button } from 'antd'
-import { Link } from 'react-router-dom'
-import { getJoke } from '../api/SampleApi'
+import NavBanner from '../components/NavBanner/NavBanner'
+import MainLayout from '../layouts/MainLayout'
 
 const About = () => {
-    const {data, isLoading} = useQuery({ queryKey: ['api1'], queryFn: getJoke })
 
   return (
-    <div>
-        <h1>React router v6 used for routing and Tanstack React query for api handling.</h1>
-        {
-            isLoading ?
-            <LoadingOutlined /> :
-            <h3>How is the weather in {data?.data?.city}, {data?.data?.country}?</h3>
-        }
-        <Link to="/">
-            <Button icon={<ArrowLeftOutlined />}>Back to home</Button>
-        </Link>
-      </div>
+    <MainLayout banner={<NavBanner title={"About Me"} subtitle={"This page is about me"} image={'https://imgs.search.brave.com/ukX-ggQZbKwqvNwaZ0flj41p6n7k7BYTZu2JXHHydsI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9hdXR1/bW4tZmFsbC1uYXR1/cmUtc2NlbmUtYXV0/dW1uYWwtcGFyay1i/ZWF1dGlmdWwtNzc4/NjkzNDMuanBn'} />}>
+      <div className="text-background">About</div>
+    </MainLayout>
   )
 }
 

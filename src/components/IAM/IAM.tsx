@@ -6,7 +6,7 @@ const IAM = () => {
     const [who, setWho] = useState(0)
     const me = [
         "Sugam Bhandari",
-        "Web Developer",
+        "a Web Developer",
     ]
 
     const meWho = () => {

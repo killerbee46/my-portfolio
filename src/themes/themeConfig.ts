@@ -1,7 +1,14 @@
-import { GlobalConfigProps } from "antd/es/notification/interface";
+import { colors } from "./colors";
+import { ThemeConfig } from "antd";
 
-// export const themeConfig:GlobalConfigProps={{
-//     token: {
-//         colorPrimary="#31c9d3",
-//     },
-//   }}
+export const themeConfig:ThemeConfig={
+    token: {
+        colorPrimary:colors?.primary,
+    },
+    components: {
+        Button: {
+          fontWeight:600,
+          fontWeightStrong:600
+        },
+      },
+  }

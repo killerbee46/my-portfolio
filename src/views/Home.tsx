@@ -3,8 +3,8 @@ import HomepageBanner from '../components/HomePageBanner/HomepageBanner'
 
 const Home = () => {
   return (
-    <MainLayout>
-      <HomepageBanner />
+    <MainLayout banner={<HomepageBanner />}>
+      
     </MainLayout>
   )
 }

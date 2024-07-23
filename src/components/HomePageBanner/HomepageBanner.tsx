@@ -1,4 +1,4 @@
-import { ProductOutlined, UserOutlined } from "@ant-design/icons"
+import { UserOutlined } from "@ant-design/icons"
 import { Button, Col, Image, Row, Space, Typography } from "antd"
 import IAM from "../IAM/IAM"
 import Title from "antd/es/typography/Title"
@@ -12,8 +12,9 @@ const HomepageBanner = () => {
         <IAM />
         <Typography.Paragraph className="text-background text-lg">I’m a Freelance UI/UX Designer and Developer based in London, England. I strives to build immersive and beautiful web applications through carefully crafted code and user-centric design.</Typography.Paragraph>
         <Space className="mt-10">
-            <Button icon={<UserOutlined />} type="primary">Production</Button>
-            <Button icon={<ProductOutlined />} type="dashed">Portfolio</Button>
+            {/* <Button icon={<UserOutlined />} type="primary">Production</Button>
+            <Button icon={<ProductOutlined />} type="dashed">Portfolio</Button> */}
+            <Button type="primary" icon={<UserOutlined />}>More about me </Button>
         </Space>
         </Col>
     </Row>

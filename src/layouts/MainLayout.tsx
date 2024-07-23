@@ -1,24 +1,25 @@
-import { Layout } from 'antd';
+import { Affix } from 'antd';
 import Navbar from '../components/Navbar/Navbar';
 import MyFooter from '../components/Footer/MyFooter';
 
-const { Header, Content, Footer } = Layout;
-
 const MainLayout = (props: any) => {
-
+  // const isHomePage = window?.location?.pathname === "/"
   return (
-    <Layout>
-      <Header style={{ display: 'flex', alignItems: 'center', background:'black' }}>
-        <Navbar />
-      </Header>
-
-      <Content style={{ minHeight: 500 }}>
+    <div>
+      <Affix>
+      <Navbar />
+      </Affix>
+      <div style={{minHeight: 500 }}>
+        {/* {
+          isHomePage ? <HomepageBanner /> : <NavBanner />
+        } */}
+        {props?.banner}
         {props?.children}
-      </Content>
-      <Footer style={{ textAlign: 'center' }}>
+      </div>
+      <div style={{ textAlign: 'center' }}>
         <MyFooter />
-      </Footer>
-    </Layout>
+      </div>
+    </div>
   );
 };
 
