@@ -11,7 +11,7 @@ const HomepageBanner = () => {
     <Row align={'middle'} style={{background:'black', padding:"20px 20px 0 20px"}}>  
         <Col lg={12} xs={24}>
         <Flex justify="center">
-        <Image preview={false} width={"67%"} src={meImage} />
+        <Image preview={false} width={"67%"} src={meImage} alt="banner_image" />
         </Flex>
         </Col>
         <Col lg={12} xs={24}>
