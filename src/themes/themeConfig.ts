@@ -10,5 +10,13 @@ export const themeConfig:ThemeConfig={
           fontWeight:600,
           fontWeightStrong:600
         },
+        Breadcrumb: {
+          linkColor:colors?.primary,
+          linkHoverColor:colors?.background,
+          separatorColor:colors?.background,
+          separatorMargin:10,
+          lastItemColor:colors?.background, 
+          iconFontSize: 24
+        },
       },
   }
