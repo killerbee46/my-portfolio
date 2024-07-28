@@ -1,30 +1,25 @@
 import { useEffect, useState } from 'react'
 import './IAM.css'
 import Title from 'antd/es/typography/Title'
+import TextTransition, { presets } from 'react-text-transition'
 
 const IAM = () => {
-    const [who, setWho] = useState(0)
     const me = [
         "Sugam Bhandari",
         "a Web Developer",
     ]
 
-    const meWho = () => {
-        const interval = setInterval(() => {
-            if (who < me.length-1 ) {
-                setWho(who+1)
-            } else {
-                setWho(0)
-            }
-      }, 2000);
-      interval
-    }
+    const [index, setIndex] = useState(0);
 
-    useEffect(()=> {
-        meWho()
-    },[who])
+    useEffect(() => {
+      const intervalId = setInterval(
+        () => setIndex((index) => index + 1),
+        3000, // every 3 seconds
+      );
+      return () => clearTimeout(intervalId);
+    }, []);
   return (
-    <Title className='flex gap-3 font-bold uppercase !text-background !mt-10'> I'm <span className='text-primary'>{me[who]}</span></Title>
+    <Title className='flex gap-3 font-bold uppercase !text-background !mt-10'> I'm <span className='text-primary'><TextTransition springConfig={presets.gentle}>{me[index % me.length]}</TextTransition></span></Title>
   )
 }
 
