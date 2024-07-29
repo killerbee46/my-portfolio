@@ -28,7 +28,15 @@
   }
   
 
-/* font Titillium Web */
-/*{
-    color: #ffffff1a;
-} */
+.white .ant-typography{
+  color: white;
+}
+.white{
+  color: white;
+}
+.black .ant-typography{
+  color: black;
+}
+.black{
+  color: black;
+}

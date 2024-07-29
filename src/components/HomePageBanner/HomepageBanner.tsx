@@ -6,7 +6,7 @@ import meImage from "../../assets/sugam.png"
 // import { colors } from "../../themes/colors"
 
 const HomepageBanner = () => {
-  const description = 'I’m a Freelance UI/UX Designer and Developer based in London, England. I strives to build immersive and beautiful web applications through carefully crafted code and user-centric design.'
+  const description = 'An enthusiastic Software Developer.'
   return (
     <Row align={'middle'} style={{background:'black', padding:"20px 20px 0 20px"}}>  
         <Col lg={12} xs={24}>
