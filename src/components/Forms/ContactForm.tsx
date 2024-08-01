@@ -1,5 +1,5 @@
 import { MailOutlined, MessageOutlined, UserOutlined } from "@ant-design/icons"
-import { Button, Col, Form, Input, Row, Typography } from "antd"
+import { Button, Col, Form, Input, Row } from "antd"
 import { useForm } from "antd/es/form/Form"
 import TextArea from "antd/es/input/TextArea"
 
@@ -11,7 +11,7 @@ const ContactForm = () => {
 <Row gutter={[30,0]}>
     <Col lg={12}>
     <Form.Item name={'fullName'}>
-    <Input placeholder="Your Message" prefix={<UserOutlined style={{color:'grey', padding:8}} />} size="large" />
+    <Input placeholder="Your Name" prefix={<UserOutlined style={{color:'grey', padding:8}} />} size="large" />
 </Form.Item>
     </Col>
     <Col lg={12}>
