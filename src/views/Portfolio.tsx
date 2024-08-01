@@ -14,7 +14,7 @@ const Portfolio = () => {
           <Row gutter={[30,30]}>
           {
             projects?.map((p:any,i:number)=> {
-              return <Col style={{height:'100%'}} lg={6} xs={24} sm={12} md={8}>
+              return <Col style={{height:'100%'}} lg={6} xs={24} sm={12} md={8} xxl={4}>
               <ProjectCard data={p} />
               </Col>
             })

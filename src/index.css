@@ -5,6 +5,7 @@
 @layer base {
     h1 {
       @apply text-3xl lg:text-4xl xl:text-6xl 2xl:text-7xl !important;
+      /* color: #ffffff15; */
     }
     h2 {
       @apply text-2xl md:text-3xl lg:text-4xl xl:text-5xl !important;
@@ -34,9 +35,24 @@
 .white{
   color: white;
 }
+.white a{
+  color: white;
+}
 .black .ant-typography{
   color: black;
 }
 .black{
   color: black;
+}
+.black a{
+  color: black;
+}
+.primary .ant-typography{
+  color: #1282ae;
+}
+.primary{
+  color: #1282ae;
+}
+.primary a{
+  color: #1282ae;
 }

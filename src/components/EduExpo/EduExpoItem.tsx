@@ -6,14 +6,14 @@ const EduExpoItem = ({title,data}:any) => {
     const timelineData = data?.map((d:any,i:number)=> {
         return {
             children:<div className="white">
-            <div><CalendarFilled /> {dayjs(d?.startDate)?.format("MMM DD, YYYY") +" - "+  dayjs(d?.startDate)?.format("MMM DD, YYYY")} </div>
+            <div><CalendarFilled /> {(d?.startDate ? dayjs(d?.startDate)?.format("MMM DD, YYYY") +" - " : "")+  dayjs(d?.startDate)?.format("MMM DD, YYYY")} </div>
             <Typography.Title level={4}>{d?.title}</Typography.Title>
-            <div>{d?.description}</div>
+            {d?.description && <div><i>{d?.description}</i></div>}
         </div>
         }
     })
   return (
-    <div className="white">
+    <div className="primary">
         <Typography.Title className="uppercase" style={{marginBottom:50}} level={3}>{title}</Typography.Title>
         <Timeline items={timelineData} />
     </div>
