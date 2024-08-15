@@ -1,3 +1,4 @@
+import AboutMe from '../components/AboutMe/AboutMe'
 import EduExpo from '../components/EduExpo/EduExpo'
 import NavBanner from '../components/NavBanner/NavBanner'
 import Container from '../container/Container'
@@ -8,6 +9,7 @@ const bannerImage = 'https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img
   return (
     <MainLayout banner={<NavBanner title={"About Me"} subtitle={"This page is about me"} image={bannerImage} />}>
       <Container space={30}>
+        <AboutMe />
         <EduExpo />
       </Container>
     </MainLayout>

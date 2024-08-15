@@ -9,17 +9,17 @@ const ContactForm = () => {
     <div className="white">
         <Form style={{color:'white !important'}} form={form} onFinish={(e)=>console.log(e)} layout="vertical">
 <Row gutter={[30,0]}>
-    <Col lg={12}>
+    <Col span={12}>
     <Form.Item name={'fullName'}>
     <Input placeholder="Your Name" prefix={<UserOutlined style={{color:'grey', padding:8}} />} size="large" />
 </Form.Item>
     </Col>
-    <Col lg={12}>
+    <Col span={12}>
     <Form.Item name={'email'}>
     <Input placeholder="Your Email" prefix={<MailOutlined style={{color:'grey', padding:8}} />} size="large" />
 </Form.Item>
     </Col>
-    <Col lg={24}>
+    <Col span={24}>
     <Form.Item name={'message'}>
     <TextArea placeholder="Your Message" size="large" style={{height:200}} />
 </Form.Item>

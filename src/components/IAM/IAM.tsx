@@ -19,7 +19,7 @@ const IAM = () => {
       return () => clearTimeout(intervalId);
     }, []);
   return (
-    <Title className='flex gap-3 font-bold uppercase !text-background !mt-10'> I'm <span className='text-primary'><TextTransition springConfig={presets.gentle}>{me[index % me.length]}</TextTransition></span></Title>
+    <Title className='flex gap-3 font-bold uppercase !text-background !mt-10 text-center lg:text-left'> I'm <span className='text-primary'><TextTransition springConfig={presets.gentle}>{me[index % me.length]}</TextTransition></span></Title>
   )
 }
 

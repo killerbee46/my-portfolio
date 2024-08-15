@@ -1,7 +1,7 @@
 import { BuildOutlined, LinkedinOutlined, MailOutlined, PhoneOutlined } from '@ant-design/icons'
-import { Space, Typography } from 'antd'
+import { Col, Row, Space, Typography } from 'antd'
 
-const ContactDetails = () => {
+const ContactDetails = ({half}:any) => {
     const phone = '+977 9861325293',
     email = "sugamsingh10@gmail.com", 
     linkedIn = 'sugam-bhandari-81672b207',
@@ -13,10 +13,10 @@ const ContactDetails = () => {
         {label:'Upwork', icon:<BuildOutlined  className='primary text-lg' />, value:<a target='_blank' className='white' href={`https://www.upwork.com/${upwork}`}>{upwork}</a>}
     ]
   return (
-    <div>
+    <Row gutter={30} style={{margin:'30px auto'}}>
         {
             contacts?.map((con)=> {
-                return <div className='white' style={{marginBottom:30}}>
+                return <Col span={half ? 12 : 24} className='white' style={{marginBottom:30}}>
                     <Typography.Title level={5}>{con?.label}</Typography.Title>
                     <Space>
                         {con?.icon}
@@ -24,10 +24,10 @@ const ContactDetails = () => {
                             {con?.value}
                         </Typography.Text>
                     </Space>
-                </div>
+                </Col>
             })
         }
-    </div>
+    </Row>
   )
 }
 

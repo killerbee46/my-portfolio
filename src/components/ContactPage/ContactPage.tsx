@@ -8,11 +8,15 @@ const ContactPage = () => {
   return (
     <Container space={40}>
         <Row>
+        <Col lg={0} xs={24}>
+        <Typography.Title style={{color:colors?.primary, marginBottom:30}} level={3}>Send a message</Typography.Title>
+        <ContactForm />
+        </Col>
         <Col lg={8}>
         <Typography.Title style={{color:colors?.primary, marginBottom:30}} level={3} >Contacts</Typography.Title>
         <ContactDetails />
         </Col>
-        <Col lg={16}>
+        <Col lg={16} xs={0}>
         <Typography.Title style={{color:colors?.primary, marginBottom:30}} level={3}>Send a message</Typography.Title>
         <ContactForm />
         </Col>

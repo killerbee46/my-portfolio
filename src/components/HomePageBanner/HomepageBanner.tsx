@@ -3,6 +3,7 @@ import { Button, Col, Flex, Image, Row, Space, Typography } from "antd"
 import IAM from "../IAM/IAM"
 import Title from "antd/es/typography/Title"
 import meImage from "../../assets/sugam.png"
+import Link from "antd/es/typography/Link"
 // import { colors } from "../../themes/colors"
 
 const HomepageBanner = () => {
@@ -21,7 +22,7 @@ const HomepageBanner = () => {
         <Space className="mt-10">
             {/* <Button icon={<UserOutlined />} type="primary">Production</Button>
             <Button icon={<ProductOutlined />} type="dashed">Portfolio</Button> */}
-            <Button type="primary" icon={<UserOutlined />}>More about me </Button>
+            <Link href="/about"><Button type="primary" icon={<UserOutlined />}>More about me </Button></Link>
         </Space>
         </Col>
     </Row>
