@@ -2,13 +2,13 @@ import { Flex, Typography } from "antd"
 import { Link} from "react-router-dom"
 import { colors } from "../../themes/colors"
 
+export const menus = [
+  {label:"Home", value:'/', icon:""},
+  {label:"About", value:'/about', icon:""},
+  {label:"Portfolio", value:'/portfolio', icon:""},
+  {label:"Contact", value:'/contact', icon:""},
+]
 const Navbar = () => {
-  const menus = [
-    {label:"Home", value:'/', icon:""},
-    {label:"About", value:'/about', icon:""},
-    {label:"Portfolio", value:'/portfolio', icon:""},
-    {label:"Contact", value:'/contact', icon:""},
-  ]
   return (
     <div style={{background:colors?.foreground,padding:"10px"}}>
       <Flex  style={{width:'100%'}} align="center" justify="center">

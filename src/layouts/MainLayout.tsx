@@ -16,7 +16,7 @@ const MainLayout = (props: any) => {
         {props?.banner}
         {props?.children}
       </div>
-      <div style={{ textAlign: 'center' }}>
+      <div>
         <MyFooter />
       </div>
     </div>
